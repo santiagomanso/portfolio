@@ -6,7 +6,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 
 export default function MyApp() {
 
-    const pdf = 'http://localhost:3000/cv.pdf'
+    const pdf = 'https://localhost:3000/cv.pdf'
 
     //eslint-disable-next-line
     const [numPages, setNumPages] = useState(14);
