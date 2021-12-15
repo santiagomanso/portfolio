@@ -34,7 +34,7 @@ export default function AlertDialogSlide({children}) {
   return (
     <div className='prueba'>
       {/* the following is the element that will trigger the dialog, in this case its an <a>TAG</a> */}
-      <a href="#testimonials" className={`mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`} onClick={handleClickOpen}>Resume</a>
+      <a href="#" className={`mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`} onClick={handleClickOpen}>Resume</a>
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
