@@ -29,6 +29,7 @@ function App() {
             allowClickAway={true}
             avatar={avatar}
             chatMessage='Hello there, how can i help you?'
+            
           />
         </main>
       </ThemeState>
