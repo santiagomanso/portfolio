@@ -8,7 +8,7 @@ import Testimonials from './components/Testimonials';
 import "tailwindcss/tailwind.css";
 import ThemeState from './context/theme/themeState';
 import FloatingWhatsApp from 'react-floating-whatsapp';
-
+import avatar from './avatar.png'
 
 
 function App() {
@@ -27,6 +27,8 @@ function App() {
             accountName='Santiago Manso Castro'
             allowEsc={true}
             allowClickAway={true}
+            avatar={avatar}
+            chatMessage='Hello there, how can i help you?'
           />
         </main>
       </ThemeState>
