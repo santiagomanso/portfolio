@@ -18,7 +18,9 @@ export default function MyApp() {
     }
   
     return (
-      <div style={{
+      <div
+        className='min-w-60'
+        style={{
         display: 'flex',
         justifyContent: 'center'
       }}>
