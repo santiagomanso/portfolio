@@ -23,11 +23,13 @@ const Navbar = () => {
             <div className="container mx-auto flex flex-wrap p-5 flex-row md:items-center justify-between">
                 
                 
-            <h3 className={`title-font font-medium ${ (darkmode === false) ? 'text-black' : 'text-white' } mb-4 md:mb-4`}>
-                <Link to="about" smooth={true} duration={1000} className="text-xl md:text-base cursor-pointer ml-3">
-                    Santiago Manso Castro
-                </Link>
-            </h3>
+            <div>
+                <h3 className={`hidden sm:flex title-font font-medium ${ (darkmode === false) ? 'text-black' : 'text-white' } mb-4 md:mb-4`}>
+                    <Link to="about" smooth={true} duration={1000} className="text-xl lg:text-2xl cursor-pointer ml-3">
+                        Santiago Manso Castro
+                    </Link>
+                </h3>
+            </div>
                     
                 <nav className="text-base md:text-lg mb-4 md:text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-nowrap items-center text-base justify-center">
                 <Link
@@ -72,16 +74,34 @@ const Navbar = () => {
                 
                 </div>
 
-                <div className='flex sm:hidden'>
-                <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="flex w-10 cursor-pointer sm:hidden" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+
+                <div className='sorete flex sm:hidden' id='test'>
+                <Link
+                    id='prueba' to="projects" smooth={true} duration={1000} 
+                    className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    Past Work
+                </Link>
+
+                <Link to="skills" smooth={true} duration={1000} className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    Skills
+                </Link>
+
+                <Link  to="testimonials" smooth={true} duration={1000} className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    Testimonials
+                </Link>
+
+        
+                <div className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    <AlertDialogSlide > {/* import fn from MuiDialog.js that renders the Slide Dialog */}
+                        <MyApp /> {/* RESUME div */}
+                    </AlertDialogSlide> 
                 </div>
+                    
+                </div>
+
+                
+
+                
 
                 </nav>
 
@@ -94,12 +114,14 @@ const Navbar = () => {
                 
 
                 <div className='hidden md:flex '>
-                    <Link
-                    to='contact' smooth={true} duration={1000}  
-                    className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                    Contact Me
-                    <ArrowRightIcon className="w-4 h-4 ml-1" />
-                    </Link>
+                    <button>
+                        <Link
+                        to='contact' smooth={true} duration={1000}  
+                        className="cursor-pointer inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                        Contact Me
+                        <ArrowRightIcon className="w-4 h-4 ml-1" />
+                        </Link>
+                    </button>
                 </div>
             </div>
         </header>
