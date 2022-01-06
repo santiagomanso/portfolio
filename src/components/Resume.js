@@ -19,9 +19,9 @@ export default function MyApp() {
   
     return (
       <div
-        className='min-w-60'
+        className='w-full'
         style={{
-        display: 'flex',
+        display: 'block',
         justifyContent: 'center'
       }}>
         <Document

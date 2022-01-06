@@ -36,7 +36,6 @@ export default function AlertDialogSlide({children}) {
       {/* the following is the element that will trigger the dialog, in this case its an <a>TAG</a> */}
       <p className={`cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`} onClick={handleClickOpen}>Resume</p>
       <Dialog
-        className='max-w-100'
         fullWidth={fullWidth}
         maxWidth={maxWidth}
         open={open}
