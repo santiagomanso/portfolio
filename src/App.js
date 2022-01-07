@@ -20,7 +20,7 @@ function App() {
           <About />
           <Projects />
           <Skills />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Contact />
           <FloatingWhatsApp 
             phoneNumber='+4901744538564'
