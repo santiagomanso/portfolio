@@ -42,9 +42,9 @@ const Navbar = () => {
                     Skills
                 </Link>
 
-                <Link  to="testimonials" smooth={true} duration={1000} className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                {/* <Link  to="testimonials" smooth={true} duration={1000} className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
                     Testimonials
-                </Link>
+                </Link> */}
 
         
                 <div className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>

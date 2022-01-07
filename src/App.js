@@ -28,8 +28,7 @@ function App() {
             allowEsc={true}
             allowClickAway={true}
             avatar={avatar}
-            chatMessage='Hello there, how can i help you?'
-            
+            chatMessage='Hello there, how can i help you?'         
           />
         </main>
       </ThemeState>
