@@ -1,9 +1,9 @@
 export const projects = [
     {
-      title: "React Reserve",
+      title: "Inventory Manager",
       subtitle: "MERN Stack",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+        "A simple excercise where i try a different approach of how a company manages their stock, regarding inbounding, they did not differenciate wether the item goes to shelf or to the backup stock. ",
       image: "./project-1.gif",
       link: "https://reactbootcamp.com",
     },
@@ -14,23 +14,7 @@ export const projects = [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
       image: "./project-2.gif",
       link: "https://reactbootcamp.com",
-    },
-    {
-      title: "DevChat",
-      subtitle: "React and Firebase",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-3.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "Epic Todo App",
-      subtitle: "React Hooks",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-4.gif",
-      link: "https://reactbootcamp.com",
-    },
+    }
   ];
   
   export const testimonials = [
@@ -64,8 +48,8 @@ export const projects = [
       url: 'https://nodejs.org/es/'
     },
     {
-      name: 'Material UI',
-      url: 'https://mui.com/'
+      name: 'Tailwind Css',
+      url: 'https://tailwindcss.com/'
     }
   ];
   

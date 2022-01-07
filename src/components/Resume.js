@@ -19,11 +19,7 @@ export default function MyApp() {
   
     return (
       <div
-        className='w-full'
-        style={{
-        display: 'block',
-        justifyContent: 'center'
-      }}>
+        className='w-full block md:flex justify-center'>
         <Document
           file = { pdf }
           onLoadSuccess={onDocumentLoadSuccess}

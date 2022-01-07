@@ -15,7 +15,7 @@ export default function AlertDialogSlide({children}) {
   //eslint-disable-next-line
   const [fullWidth, setFullWidth] = React.useState(true); // atributes to set width
   //eslint-disable-next-line
-  const [maxWidth, setMaxWidth] = React.useState('sm');   // to the dialog  
+  const [maxWidth, setMaxWidth] = React.useState('md');   // to the dialog  
 
   const themesContext = useContext(themeContext);
   const { darkmode, } = themesContext;
