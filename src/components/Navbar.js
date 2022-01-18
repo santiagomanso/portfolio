@@ -34,11 +34,11 @@ const Navbar = () => {
                 <nav className="text-base md:text-lg mb-4 md:text-base md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-nowrap items-center text-base justify-center">
                 <Link
                     id='prueba' to="projects" smooth={true} duration={1000} 
-                    className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-green-400' }`}>
                     Past Work
                 </Link>
 
-                <Link to="skills" smooth={true} duration={1000} className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                <Link to="skills" smooth={true} duration={1000} className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-green-400' }`}>
                     Skills
                 </Link>
 
@@ -47,7 +47,7 @@ const Navbar = () => {
                 </Link> */}
 
         
-                <div className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                <div className={`hidden sm:flex cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-green-400' }`}>
                     <AlertDialogSlide > {/* import fn from MuiDialog.js that renders the Slide Dialog */}
                         <MyApp /> {/* RESUME div */}
                     </AlertDialogSlide> 
@@ -75,14 +75,14 @@ const Navbar = () => {
                 </div>
 
 
-                <div className='sorete flex sm:hidden' id='test'>
+                <div className='flex sm:hidden' id='test'>
                 <Link
                     id='prueba' to="projects" smooth={true} duration={1000} 
-                    className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                    className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:' }`}>
                     Past Work
                 </Link>
 
-                <Link to="skills" smooth={true} duration={1000} className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                <Link to="skills" smooth={true} duration={1000} className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:' }`}>
                     Skills
                 </Link>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </Link> */}
 
         
-                <div className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:text-black' }`}>
+                <div className={` cursor-pointer mr-5 ${(darkmode === false) ? 'text-black hover:text-gray-300' : 'text-white hover:' }`}>
                     <AlertDialogSlide > {/* import fn from MuiDialog.js that renders the Slide Dialog */}
                         <MyApp /> {/* RESUME div */}
                     </AlertDialogSlide> 

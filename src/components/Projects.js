@@ -22,7 +22,7 @@ const Projects = () => {
             </div>
             <div className="flex flex-wrap -m-4">
             {projects.map((project) => (
-                <a
+                <p
                 href={project.link}
                 key={project.image}
                 className="sm:w-1/2 w-100 p-4">
@@ -39,10 +39,38 @@ const Projects = () => {
                     <h1 className="title-font text-lg font-medium text-white mb-3">
                         {project.title}
                     </h1>
-                    <p className="leading-relaxed">{project.description}</p>
+                    <p className="leading-relaxed">
+                    {project.description}
+                    <div className='flex flex-col lg:flex-row items-center lg:justify-evenly '>
+                        <a href="https://inventory.santimanso.com/" target="_blank" rel="noreferrer">
+                            <button className='flex items-center justify-around m-2 px-16 lg:px-4 py-2 rounded-2xl bg-gray-800 hover:bg-green-700 w-18'>
+                                <p className='mr-4'>View Live</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M11.933 12.8a1 1 0 000-1.6L6.6 7.2A1 1 0 005 8v8a1 1 0 001.6.8l5.333-4zM19.933 12.8a1 1 0 000-1.6l-5.333-4A1 1 0 0013 8v8a1 1 0 001.6.8l5.333-4z" />
+                                </svg>   
+                            </button>
+                        </a>
+                        <a href="https://github.com/santiagomanso/inventory" target="_blank" rel="noreferrer">
+                            <button className='flex items-center justify-around m-2 px-16 lg:px-4 py-2 rounded-2xl bg-gray-800 hover:bg-green-700 w-18'>
+                                <p className='mr-4'>Front End</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>   
+                            </button>
+                        </a>
+                        <a href="https://github.com/santiagomanso/inventory-server" target="_blank" rel="noreferrer">
+                            <button className='flex items-center justify-around m-2 px-16 lg:px-4 py-2 rounded-2xl bg-gray-800 hover:bg-green-700 w-18'>
+                            <p className='mr-4'>Backend</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fillRule="evenodd" d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                            </svg>
+                            </button>
+                        </a>
+                    </div>
+                    </p>
                     </div>
                 </div>
-                </a>
+                </p>
             ))}
             </div>
         </div>

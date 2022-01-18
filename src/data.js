@@ -5,15 +5,7 @@ export const projects = [
       description:
         "A simple excercise where i try a different approach of how a company manages their stock, regarding inbounding, they did not differenciate wether the item goes to shelf or to the backup stock. ",
       image: "./project-1.gif",
-      link: "https://reactbootcamp.com",
-    },
-    {
-      title: "React Tracks",
-      subtitle: "React and Python",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-      image: "./project-2.gif",
-      link: "https://reactbootcamp.com",
+      link: "inventory.santimanso.com",
     }
   ];
   
